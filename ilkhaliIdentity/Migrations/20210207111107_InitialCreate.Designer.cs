@@ -10,7 +10,7 @@ using ilkhaliIdentity.Models;
 namespace ilkhaliIdentity.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20210206185917_InitialCreate")]
+    [Migration("20210207111107_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
