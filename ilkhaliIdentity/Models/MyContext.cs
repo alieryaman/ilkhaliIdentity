@@ -8,16 +8,16 @@ using System.Threading.Tasks;
 
 namespace ilkhaliIdentity.Models
 {
-    public class MyContext: IdentityDbContext
+    public class MyContext:  IdentityDbContext<AppUser, AppRole, string>
     {
         public MyContext(DbContextOptions<MyContext> options) : base(options)
         {
 
         }
+        public DbSet<Urunler> Blogs { get; set; }
 
 
 
-        
 
 
     }

@@ -32,7 +32,7 @@ namespace ilkhaliIdentity
             services.AddDbContext<MyContext>(options =>
         options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-            services.AddIdentity<IdentityUser, IdentityRole>()
+            services.AddIdentity<AppUser, AppRole>()
         .AddEntityFrameworkStores<MyContext>()
         .AddDefaultTokenProviders();
 
